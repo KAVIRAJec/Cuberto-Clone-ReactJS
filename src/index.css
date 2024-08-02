@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.noto-sans-unique {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: initial;
+    font-variation-settings:
+        "width" 100;
+}
+
+.montserrat-menu {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cursor-grow {
+    @apply w-10 h-10 -mx-3;
+}
+
+.poppins-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-side {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.cursor-play {
+    @apply cursor-none;
+    /* Hide the default cursor */
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: url('https://img.icons8.com/?size=100&id=80556&format=png&color=000000') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar {
+    z-index: 50;
+}
+
+.relative .hover\:translate-y-0:hover {
+    transform: translateY(0);
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
